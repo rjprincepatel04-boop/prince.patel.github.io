@@ -1,0 +1,133 @@
+/* ==========================================
+   HOME PAGE STYLES
+========================================== */
+
+/* ========= HERO SECTION ========= */
+
+.hero{
+    width:100%;
+    background:#ffffff;
+    padding:0;
+}
+
+.hero-image{
+    width:100%;
+    display:block;
+    object-fit:cover;
+}
+
+/* ========= ABOUT PREVIEW ========= */
+
+.about-preview{
+    background:#f5f9ff;
+    text-align:center;
+}
+
+.about-preview p{
+    max-width:850px;
+    margin:20px auto;
+    font-size:18px;
+    line-height:1.8;
+}
+
+/* ========= WHY CHOOSE US ========= */
+
+.why-us{
+    background:#ffffff;
+}
+
+.why-us .card{
+    border-top:5px solid #0056d2;
+}
+
+.why-us .card:hover{
+    transform:translateY(-10px);
+}
+
+/* ========= COURSES ========= */
+
+.courses-home{
+    background:#eef5ff;
+}
+
+.courses-home .card ul{
+    margin-top:15px;
+}
+
+.courses-home .card li{
+    padding:10px 0;
+    border-bottom:1px solid #e5e5e5;
+}
+
+.courses-home .card li:last-child{
+    border-bottom:none;
+}
+
+.courses-home .btn{
+    display:block;
+    width:fit-content;
+    margin:40px auto 0;
+}
+
+/* ========= TEACHING FEATURES ========= */
+
+.features{
+    background:#ffffff;
+}
+
+.features .card{
+    text-align:center;
+}
+
+.features .card i{
+    font-size:45px;
+    color:#0056d2;
+}
+
+/* ========= ADMISSION SECTION ========= */
+
+.admission{
+    background:linear-gradient(135deg,#0056d2,#1e88e5);
+    color:#ffffff;
+    text-align:center;
+}
+
+.admission h2{
+    color:#ffffff;
+}
+
+.admission p{
+    color:#f2f2f2;
+    max-width:700px;
+    margin:20px auto;
+}
+
+.admission .btn{
+    background:#ffffff;
+    color:#0056d2;
+}
+
+.admission .btn:hover{
+    background:#ffc107;
+    color:#222222;
+}
+
+/* ========= SIMPLE ANIMATION ========= */
+
+.card{
+    animation:fadeUp .8s ease;
+}
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
