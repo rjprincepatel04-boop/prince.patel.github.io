@@ -1,0 +1,309 @@
+/* =========================================
+   PIYUSH TUITION CLASSES
+   COURSES PAGE
+========================================= */
+
+.courses-hero {
+    padding: 90px 0;
+    background: linear-gradient(135deg, #eef6ff, #ffffff);
+    text-align: center;
+}
+
+.courses-hero-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.courses-label {
+    display: inline-block;
+    margin-bottom: 15px;
+    color: var(--primary);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.courses-hero h1 {
+    margin-bottom: 18px;
+    color: #102a43;
+    font-size: 52px;
+}
+
+.courses-hero h1 span {
+    color: var(--primary);
+}
+
+.courses-hero p {
+    color: var(--gray);
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   COURSES SECTION
+========================================= */
+
+.courses-section {
+    padding: 90px 0;
+    background: #ffffff;
+}
+
+.course-category {
+    margin-bottom: 70px;
+}
+
+.course-category:last-child {
+    margin-bottom: 0;
+}
+
+.course-category-header {
+    margin-bottom: 35px;
+}
+
+.course-category-header span {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: var(--primary);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.course-category-header h2 {
+    color: #102a43;
+    font-size: 36px;
+}
+
+.course-category-header h2 span {
+    color: var(--primary);
+}
+
+
+/* =========================================
+   COURSE GRID
+========================================= */
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.course-card {
+    position: relative;
+    padding: 32px 28px;
+    background: #ffffff;
+    border: 1px solid #dfeaf5;
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.course-card:hover {
+    transform: translateY(-7px);
+    box-shadow: var(--shadow-hover);
+    border-color: #bfd7ef;
+}
+
+.course-card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--primary);
+}
+
+.course-icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 22px;
+    border-radius: 14px;
+    background: #edf5ff;
+    color: var(--primary);
+    font-size: 23px;
+}
+
+.course-card h3 {
+    margin-bottom: 12px;
+    color: #17324d;
+    font-size: 20px;
+}
+
+.course-card p {
+    color: var(--gray);
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   COURSE INFO
+========================================= */
+
+.course-info {
+    margin-top: 45px;
+    padding: 25px 30px;
+    background: #f7fbff;
+    border: 1px solid #dceaf7;
+    border-radius: 14px;
+}
+
+.course-info p {
+    color: var(--gray);
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.course-info strong {
+    color: #17324d;
+}
+
+
+/* =========================================
+   CTA
+========================================= */
+
+.courses-cta {
+    padding: 0 0 90px;
+    background: #ffffff;
+}
+
+.courses-cta-box {
+    padding: 55px 45px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #eef6ff, #f8fbff);
+    border: 1px solid #d8e8f8;
+    text-align: center;
+}
+
+.courses-cta-box h2 {
+    margin-bottom: 15px;
+    color: #102a43;
+    font-size: 35px;
+}
+
+.courses-cta-box p {
+    max-width: 650px;
+    margin: 0 auto 25px;
+    color: var(--gray);
+    line-height: 1.7;
+}
+
+.course-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 13px 23px;
+    border-radius: 8px;
+    background: var(--primary);
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.course-button:hover {
+    background: #064cae;
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 991px) {
+
+    .course-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .courses-hero {
+        padding: 70px 0;
+    }
+
+    .courses-hero h1 {
+        font-size: 40px;
+    }
+
+    .courses-hero p {
+        font-size: 15px;
+    }
+
+    .courses-section {
+        padding: 65px 0;
+    }
+
+    .course-category {
+        margin-bottom: 55px;
+    }
+
+    .course-category-header h2 {
+        font-size: 31px;
+    }
+
+    .course-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .courses-cta {
+        padding-bottom: 65px;
+    }
+
+    .courses-cta-box {
+        padding: 40px 23px;
+    }
+
+    .courses-cta-box h2 {
+        font-size: 29px;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+    .courses-hero {
+        padding: 55px 0;
+    }
+
+    .courses-hero h1 {
+        font-size: 33px;
+    }
+
+    .courses-hero p {
+        font-size: 14px;
+    }
+
+    .course-card {
+        padding: 27px 23px;
+    }
+
+    .course-category-header h2 {
+        font-size: 28px;
+    }
+
+}
