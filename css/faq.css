@@ -120,7 +120,6 @@
     overflow: hidden;
     transition: max-height 0.35s ease;
 }
-
 .faq-answer p {
     padding: 0 25px 22px;
     color: var(--gray);
