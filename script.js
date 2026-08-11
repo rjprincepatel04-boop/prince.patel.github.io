@@ -1,13 +1,9 @@
-// =========================================
-// PIYUSH TUITION CLASSES
-// MAIN JAVASCRIPT
-// =========================================
 
 document.addEventListener("DOMContentLoaded", function () {
 
-    // =====================================
-    // FAQ ACCORDION
-    // =====================================
+    /* =====================================
+       FAQ ACCORDION
+    ===================================== */
 
     const faqQuestions = document.querySelectorAll(".faq-question");
 
@@ -15,31 +11,38 @@ document.addEventListener("DOMContentLoaded", function () {
 
         question.addEventListener("click", function () {
 
-            const faqItem = question.closest(".faq-item");
-            const answer = faqItem.querySelector(".faq-answer");
+            const currentItem = question.closest(".faq-item");
+            const currentAnswer = currentItem.querySelector(".faq-answer");
 
-            // Close other FAQ items
+            // Close all other FAQ answers
             document.querySelectorAll(".faq-item").forEach(function (item) {
 
-                if (item !== faqItem) {
+                if (item !== currentItem) {
+
                     item.classList.remove("active");
 
-                    const otherAnswer = item.querySelector(".faq-answer");
+                    const answer = item.querySelector(".faq-answer");
 
-                    if (otherAnswer) {
-                        otherAnswer.style.maxHeight = null;
+                    if (answer) {
+                        answer.style.maxHeight = null;
                     }
+
                 }
 
             });
 
-            // Open / close selected FAQ
-            faqItem.classList.toggle("active");
+            // Open / close current answer
+            if (currentItem.classList.contains("active")) {
 
-            if (faqItem.classList.contains("active")) {
-                answer.style.maxHeight = answer.scrollHeight + "px";
+                currentItem.classList.remove("active");
+                currentAnswer.style.maxHeight = null;
+
             } else {
-                answer.style.maxHeight = null;
+
+                currentItem.classList.add("active");
+                currentAnswer.style.maxHeight =
+                    currentAnswer.scrollHeight + "px";
+
             }
 
         });
@@ -47,17 +50,19 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 
-    // =====================================
-    // MOBILE NAVIGATION
-    // =====================================
+    /* =====================================
+       MOBILE MENU
+    ===================================== */
 
-    const menuToggle = document.querySelector(".menu-toggle");
-    const navLinks = document.querySelector(".nav-links");
+    const menuButton = document.querySelector(".menu-btn");
+    const navigation = document.querySelector(".nav-links");
 
-    if (menuToggle && navLinks) {
+    if (menuButton && navigation) {
 
-        menuToggle.addEventListener("click", function () {
-            navLinks.classList.toggle("active");
+        menuButton.addEventListener("click", function () {
+
+            navigation.classList.toggle("active");
+
         });
 
     }
