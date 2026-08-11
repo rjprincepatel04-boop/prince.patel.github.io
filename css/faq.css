@@ -115,9 +115,9 @@
 ========================================= */
 
 .faq-answer {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.35s ease;
+    max-height: none;
+    overflow: visible;
+    display: block;
 }
 
 .faq-answer p {
