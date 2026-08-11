@@ -114,10 +114,11 @@
    ANSWER
 ========================================= */
 
+
 .faq-answer {
-    max-height: none;
-    overflow: visible;
-    display: block;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease;
 }
 
 .faq-answer p {
