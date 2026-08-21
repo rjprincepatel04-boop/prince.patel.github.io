@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rjprincepatel04-boop.github.io/prince.patel.github.io/sitemap.xml
+
